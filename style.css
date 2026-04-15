@@ -1,123 +1,94 @@
 body {
-    background-color: #FFC0CB; /* PINK: Latar Belakang */
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #a2d1a4; /* Hijau Terang untuk background luar */
+    font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
-}
-
-/* Header */
-.judul {
-    width: 90%;
-    margin: 20px auto;
-    background-color: #2ECC71; /* HIJAU */
-    color: white;
-    text-align: center;
-    padding: 40px 0;
-}
-
-/* Menu Navigasi */
-.menu {
-    background-color: #27AE60; /* HIJAU TUA */
-    width: 90%;
-    margin: -20px auto 10px auto;
-    border-radius: 8px 8px 0 0;
-}
-
-.menu ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    overflow: hidden;
-}
-
-.menu ul li {
-    float: left;
-}
-
-.menu ul li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 20px;
-    text-decoration: none;
-}
-
-.menu ul li a:hover {
-    background-color: #F1C40F; /* KUNING: Saat disentuh mouse */
-    color: black;
-}
-
-/* Kontainer Utama */
-.pembungkus-kuning {
-    background-color: #FFF9C4; /* KUNING MUDA */
-    width: 90%;
-    margin: 0 auto;
-    padding: 20px 0;
-    border: 1px solid #FBC02D;
-}
-
-.wadah {
-    width: 95%;
-    margin: 0 auto;
-    display: flex; /* Membuat konten kiri dan bilah sisi bersebelahan */
-}
-
-.konten-kiri {
-    flex: 7;
-    margin-right: 20px;
-}
-
-.kotak {
-    background-color: white;
-    border: 1px solid #2ECC71; /* Bingkai Hijau */
     padding: 20px;
+}
+
+/* Header (Warna Pink) */
+.header {
+    background-color: #ffc0cb; /* Pink */
+    padding: 30px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+/* Navigasi (Warna Hijau Daun) */
+.nav {
+    background-color: #b2d8b2; /* Hijau Muda */
+    padding: 10px;
+}
+
+.nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 0 15px;
+    font-weight: bold;
+}
+
+/* Wadah Utama (Flexbox untuk membagi kiri dan kanan) */
+.main-container {
+    background-color: #fff9c4; /* Kuning Lembut */
+    display: flex;
+    padding: 20px;
+    margin-top: 5px;
+    min-height: 400px;
+}
+
+/* Bagian Konten Kiri */
+.content {
+    flex: 3; /* Lebih lebar */
+    padding-right: 20px;
+}
+
+.post-box {
+    background-color: white;
+    border: 1px solid #888;
+    padding: 15px;
     margin-bottom: 20px;
 }
 
-.kotak h3 {
-    color: #27AE60;
-    margin-top: 0;
-}
-
-.tombol {
-    background-color: #2ECC71;
-    color: white;
-    border: none;
-    padding: 10px 15px;
+.btn {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
     cursor: pointer;
 }
 
-/* Bilah Sisi */
-.bilah-sisi {
-    flex: 3;
+/* Bagian Sidebar Kanan */
+.sidebar {
+    flex: 1; /* Lebih sempit */
     background-color: white;
-    padding: 20px;
-    border: 1px solid #DDD;
-    height: fit-content;
+    padding: 15px;
+    border-left: 1px solid #ddd;
 }
 
-.bilah-sisi-daftar {
+.cat-list {
     list-style: none;
     padding: 0;
 }
 
-.bilah-sisi-daftar li {
-    padding: 10px 0;
-    border-bottom: 1px solid #EEE;
+.cat-list li {
+    margin-bottom: 10px;
 }
 
-.bilah-sisi-daftar li a {
+.cat-list li a {
     text-decoration: none;
-    color: #27AE60;
+    color: darkblue;
 }
 
-/* Footer */
-.kotak-kaki {
-    background-color: #27AE60; /* HIJAU */
+/* Footer (Warna Biru/Hijau sesuai gambar) */
+.footer {
+    background-color: #4a77a5; /* Biru seperti gambar */
     color: white;
     text-align: center;
-    padding: 15px;
-    width: 90%;
-    margin: 20px auto;
-    box-sizing: border-box;
+    padding: 10px;
+    margin-top: 5px;
 }
