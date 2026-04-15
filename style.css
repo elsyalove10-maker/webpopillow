@@ -1,63 +1,163 @@
+/* --- Pengaturan Dasar Website --- */
+* {
+    box-sizing: border-box; /* Agar padding tidak merusak lebar kotak */
+}
+
 body {
-    background-color: #a2d1a4; /* Hijau luar */
-    font-family: Arial, sans-serif;
+    background-color: #a2d1a4; /* HIJAU TERANG: Latar belakang luar */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
-    padding: 20px;
+    padding: 10px; /* Jarak sedikit dari pinggir layar */
 }
 
-/* Kotak Header */
-.header {
-    background-color: #ffc0cb; /* Pink */
-    padding: 20px;
+/* --- 1. HEADER (Perpaduan Pink & Hijau) --- */
+.header-container {
+    background-color: #ffc0cb; /* PINK */
+    padding: 30px;
     text-align: left;
-    border-bottom: 2px solid #ddd;
+    border-bottom: 3px solid #b2d8b2; /* Garis Hijau di bawah */
+    border-radius: 5px 5px 0 0; /* Membuat sudut atas melengkung */
 }
 
-/* Navigasi */
-.nav {
-    background-color: #b2d8b2; /* Hijau muda */
+.header-content h1 {
+    margin: 0;
+    color: #333;
+    font-size: 24px;
+}
+
+.header-content h2 {
+    margin: 5px 0 0;
+    color: #555;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+/* --- 2. MENU NAVIGASI (Hijau Muda) --- */
+.nav-bar {
+    background-color: #b2d8b2; /* HIJAU MUDA */
     padding: 10px;
+    border-bottom: 2px solid #a2d1a4;
 }
 
-.nav ul {
+.nav-bar ul {
     list-style: none;
+    margin: 0;
     padding: 0;
-    display: flex;
-    gap: 15px;
+    display: flex; /* Membuat menu berjajar ke samping */
+    gap: 20px; /* Jarak antar menu */
 }
 
-.nav a { text-decoration: none; color: blue; font-weight: bold; }
+.nav-bar a {
+    text-decoration: none;
+    color: #444;
+    font-weight: bold;
+    font-size: 16px;
+}
 
-/* INI KUNCINYA: Membuat konten dan sidebar bersebelahan */
-.main-container {
-    display: flex; /* Membuat konten & kategori jadi samping-sampingan */
-    background-color: #fff9c4; /* Kuning tengah */
+.nav-bar a:hover {
+    color: #f1c40f; /* KUNING: Saat disentuh kursor */
+}
+
+.nav-bar a.active {
+    color: #27ae60; /* HIJAU TUA: Halaman yang sedang dibuka */
+    border-bottom: 2px solid #27ae60;
+}
+
+/* --- 3. WADAH UTAMA (Warna Kuning Tengah) --- */
+.main-wrapper {
+    background-color: #fff9c4; /* KUNING LEMBUT */
+    display: flex; /* MEMBUAT KIRI & KANAN BERSEBELAHAN */
     padding: 20px;
-    gap: 20px;
+    margin-top: 5px;
+    gap: 20px; /* Jarak antara konten dan sidebar */
 }
 
-.content {
+/* Bagian Kiri (Konten) */
+.left-content {
     flex: 3; /* Bagian kiri lebih lebar */
 }
 
-.post-box {
+.info-card {
     background-color: white;
     padding: 15px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
 }
 
-.sidebar {
-    flex: 1; /* Bagian kategori lebih sempit */
+.info-card h3 {
+    margin-top: 0;
+    color: #27ae60;
+}
+
+/* Tombol (Button) */
+button {
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+.btn-primary {
+    background-color: #2ecc71; /* Hijau Terang */
+    color: white;
+}
+
+.btn-secondary {
+    background-color: #f1c40f; /* Kuning Terang */
+    color: black;
+}
+
+/* Bagian Kanan (Sidebar Kategori) */
+.right-sidebar {
+    flex: 1; /* Bagian kanan lebih sempit */
     background-color: white;
     padding: 15px;
-    border: 1px solid #ccc;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    height: fit-content; /* Sesuai isi, tidak memanjang ke bawah */
 }
 
-.footer {
-    background-color: #4a77a5;
+.right-sidebar h3 {
+    margin-top: 0;
+    color: #333;
+    font-size: 16px;
+    text-align: center;
+}
+
+.right-sidebar hr {
+    border: 0;
+    border-top: 1px solid #ddd;
+}
+
+.cat-list {
+    list-style: none;
+    padding: 0;
+}
+
+.cat-list li {
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.cat-list li a {
+    text-decoration: none;
+    color: darkblue;
+    font-weight: bold;
+}
+
+/* --- 4. FOOTER (Bagian Bawah) --- */
+.site-footer {
+    background-color: #4a77a5; /* Biru seperti gambar */
     color: white;
     text-align: center;
-    padding: 10px;
-    margin-top: 10px;
+    padding: 15px;
+    margin-top: 5px;
+    border-radius: 0 0 5px 5px;
+}
+
+.site-footer p {
+    margin: 0;
+    font-size: 14px;
 }
