@@ -1,38 +1,33 @@
 body {
-    background-color: #ffc0cb; /* Pink Lembut */
-    font-family: sans-serif;
+    background-color: #FFC0CB; /* PINK: Latar Belakang */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
 }
 
-/* Bagian Judul/Header */
+/* Header */
 .judul {
     width: 90%;
     margin: 20px auto;
-    height: 120px;
-    line-height: 120px;
-    background-color: #2ecc71; /* Hijau */
+    background-color: #2ECC71; /* HIJAU */
     color: white;
     text-align: center;
+    padding: 40px 0;
 }
 
-.jarak {
-    padding: 0 30px;
-}
-
-/* Bagian Menu Navigasi */
+/* Menu Navigasi */
 .menu {
-    background-color: #27ae60; /* Hijau lebih gelap */
+    background-color: #27AE60; /* HIJAU TUA */
     width: 90%;
-    margin: 10px auto;
-    height: 50px;
+    margin: -20px auto 10px auto;
     border-radius: 8px 8px 0 0;
 }
 
 .menu ul {
     list-style: none;
-    margin: 0;
     padding: 0;
+    margin: 0;
+    overflow: hidden;
 }
 
 .menu ul li {
@@ -41,63 +36,63 @@ body {
 
 .menu ul li a {
     display: block;
-    padding: 0 20px;
-    line-height: 50px;
     color: white;
+    text-align: center;
+    padding: 14px 20px;
     text-decoration: none;
 }
 
 .menu ul li a:hover {
-    background-color: #f1c40f; /* Kuning saat kursor diarahkan */
+    background-color: #F1C40F; /* KUNING: Saat disentuh mouse */
     color: black;
-}
-
-.menu::after {
-    content: "";
-    display: table;
-    clear: both;
 }
 
 /* Kontainer Utama */
 .pembungkus-kuning {
-    background-color: #fff9c4; /* Kuning Muda */
+    background-color: #FFF9C4; /* KUNING MUDA */
     width: 90%;
     margin: 0 auto;
     padding: 20px 0;
-    border-radius: 0 0 8px 8px;
-    border: 1px solid #fbc02d;
+    border: 1px solid #FBC02D;
 }
 
-.waday, .pembungkus-kuning .wadah {
+.wadah {
     width: 95%;
     margin: 0 auto;
-    display: flex;
-    gap: 20px;
+    display: flex; /* Membuat konten kiri dan bilah sisi bersebelahan */
 }
 
-/* Konten Kiri */
 .konten-kiri {
     flex: 7;
+    margin-right: 20px;
 }
 
 .kotak {
     background-color: white;
-    border: 1px solid #2ecc71; /* Bingkai Hijau */
+    border: 1px solid #2ECC71; /* Bingkai Hijau */
     padding: 20px;
     margin-bottom: 20px;
 }
 
 .kotak h3 {
+    color: #27AE60;
     margin-top: 0;
-    color: #2ecc71; /* Teks Hijau */
 }
 
-/* Bilah Sisi (Sidebar) */
+.tombol {
+    background-color: #2ECC71;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+/* Bilah Sisi */
 .bilah-sisi {
     flex: 3;
     background-color: white;
     padding: 20px;
-    border: 1px solid #ccc;
+    border: 1px solid #DDD;
     height: fit-content;
 }
 
@@ -107,24 +102,21 @@ body {
 }
 
 .bilah-sisi-daftar li {
-    padding: 8px 0;
-    border-bottom: 1px solid #eee;
+    padding: 10px 0;
+    border-bottom: 1px solid #EEE;
 }
 
 .bilah-sisi-daftar li a {
     text-decoration: none;
-    color: #2ecc71;
-    font-weight: bold;
+    color: #27AE60;
 }
 
-/* Bagian Kaki (Footer) */
+/* Footer */
 .kotak-kaki {
-    background-color: #2ecc71; /* Hijau */
+    background-color: #27AE60; /* HIJAU */
     color: white;
-    padding: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
     text-align: center;
+    padding: 15px;
     width: 90%;
     margin: 20px auto;
     box-sizing: border-box;
