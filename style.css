@@ -1,107 +1,136 @@
-/* Pengaturan Umum */
+/* Pengaturan Dasar */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #fce4ec; /* Pink Lembut */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #FCE4EC; /* Pink Pastel Lembut */
     margin: 0;
     padding: 0;
+    color: #444;
 }
 
 .container {
     width: 90%;
     max-width: 1000px;
-    margin: 20px auto;
+    margin: 30px auto;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.05); /* Shadow halus agar terlihat modern */
 }
 
-/* Header */
+/* Header - Hijau Pastel */
 header {
-    background-color: #43a047; /* Hijau Lembut Gelap sedikit agar teks putih kontras */
-    color: white;
-    padding: 30px;
-    text-align: left;
+    background-color: #A5D6A7; /* Hijau Pastel */
+    color: #2E452E;
+    padding: 40px 30px;
 }
 
-/* Navigation */
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+/* Navigasi - Hijau Pastel Lebih Pekat */
 nav {
-    background-color: #2e7d32; /* Hijau lebih gelap */
-    padding: 10px;
+    background-color: #81C784; 
+    padding: 12px 30px;
 }
 
 nav ul {
-    list-items: none;
+    list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
 }
 
 nav ul li {
-    list-style: none;
-    margin-right: 20px;
+    margin-right: 25px;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 600;
+    font-size: 14px;
 }
 
-/* Layout Konten & Sidebar */
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Kontainer Utama */
 .main-wrapper {
     display: flex;
-    background-color: white;
-    padding: 20px;
-    min-height: 400px;
+    background-color: #FFFFFF; /* Putih bersih untuk area tengah */
+    padding: 30px;
 }
 
+/* Bagian Konten */
 .content {
     flex: 7;
-    padding-right: 20px;
+    padding-right: 30px;
 }
 
-.sidebar {
-    flex: 3;
-    border-left: 1px solid #ddd;
-    padding-left: 20px;
-}
-
-/* Style Artikel */
+/* Artikel/Post - Kuning Pastel */
 .post {
-    border: 2px solid #555;
+    background-color: #FFF9C4; /* Kuning Pastel */
+    border: 1.5px solid #E0E0E0;
     padding: 20px;
-    margin-bottom: 20px;
-    background-color: #fff9c4; /* Kuning Lembut */
+    margin-bottom: 25px;
 }
 
 .post h2 {
     margin-top: 0;
+    color: #5D4037;
 }
 
 .btn-read {
-    background-color: #e0e0e0;
-    border: 1px solid #aaa;
-    padding: 5px 10px;
+    background-color: #F5F5F5;
+    border: 1px solid #CCC;
+    padding: 6px 12px;
+    font-size: 12px;
     cursor: pointer;
+    color: #666;
 }
 
-/* Sidebar List */
+.btn-read:hover {
+    background-color: #EEEEEE;
+}
+
+/* Sidebar */
+.sidebar {
+    flex: 3;
+    border-left: 1px solid #F0F0F0;
+    padding-left: 30px;
+}
+
+.sidebar h3 {
+    font-size: 18px;
+    margin-top: 0;
+    color: #333;
+}
+
+.sidebar hr {
+    border: 0;
+    border-top: 1px solid #EEE;
+    margin-bottom: 15px;
+}
+
 .sidebar ul {
     list-style: none;
     padding: 0;
 }
 
 .sidebar ul li {
-    margin-bottom: 10px;
+    margin-bottom: 12px;
 }
 
 .sidebar ul li a {
-    color: #1a237e;
+    color: #448AFF; /* Warna link biru lembut */
     text-decoration: none;
+    font-size: 14px;
 }
 
-/* Footer */
+/* Footer - Hijau Pastel */
 footer {
-    background-color: #2e7d32;
+    background-color: #81C784;
     color: white;
-    text-align: left;
-    padding: 10px 20px;
-    margin-top: 5px;
+    padding: 15px 30px;
+    font-size: 13px;
 }
