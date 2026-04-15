@@ -1,3 +1,4 @@
+/* Reset Dasar */
 * {
     margin: 0;
     padding: 0;
@@ -5,125 +6,100 @@
     font-family: Arial, sans-serif;
 }
 
-/* Header Pink Full Lebar */
+body {
+    background-color: #fdfd96; /* Kuning Pastel untuk Background Luar */
+    padding: 20px;
+}
+
+/* Header - Warna Pink */
 header {
-    background-color: #ffcce0; /* Pink Muda */
-    padding: 40px 20px;
-    height: 150px;
-}
-
-header h1 {
+    background-color: #ffb7c5; /* Pink */
+    padding: 30px;
+    text-align: left;
     color: white;
-    font-size: 18px;
-    max-width: 1000px;
-    margin: 0 auto;
 }
 
-/* Navigasi Hijau */
+/* Navigasi - Warna Hijau */
 nav {
-    background-color: #c2e0c2; /* Hijau Muda */
-    padding: 10px 0;
-}
-
-.inner-content {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 0 20px;
+    background-color: #a8e4a0; /* Hijau Muda */
+    padding: 10px;
 }
 
 nav ul {
     list-style: none;
-    display: flex;
 }
 
 nav ul li {
+    display: inline;
     margin-right: 20px;
 }
 
 nav ul li a {
     text-decoration: none;
     color: white;
-    font-size: 14px;
+    font-weight: bold;
 }
 
-/* Wrapper Utama untuk Background Hijau di sisi luar */
-.main-wrapper {
-    background-color: #c2e0c2; /* Hijau yang sama dengan nav */
-    padding: 20px 0;
-    min-height: 500px;
-}
-
-/* Kotak Putih di Tengah */
+/* Layout Utama */
 .container {
-    background-color: white;
-    max-width: 1000px;
-    margin: 0 auto;
     display: flex;
-    padding: 30px;
-    gap: 30px;
-}
-
-main {
-    flex: 2;
-}
-
-/* Kotak Artikel (Border Biru Tipis) */
-.post-card {
-    border: 1px solid #a3c1ad;
+    background-color: white;
     padding: 20px;
+    min-height: 400px;
+}
+
+.content {
+    flex: 3;
+    padding-right: 20px;
+}
+
+.sidebar {
+    flex: 1;
+    border-left: 1px solid #ddd;
+    padding-left: 20px;
+}
+
+/* Kartu Artikel */
+.card {
+    border: 1px solid #ffb7c5;
+    padding: 15px;
     margin-bottom: 20px;
 }
 
-.post-card h2 {
-    font-size: 18px;
+.card h2 {
+    color: #333;
     margin-bottom: 10px;
 }
 
-.read-more {
-    background: #f0f0f0;
+.card button {
+    background-color: #eee;
     border: 1px solid #ccc;
-    padding: 2px 5px;
-    font-size: 12px;
+    padding: 5px 10px;
     cursor: pointer;
+    margin-top: 10px;
 }
 
-/* Sidebar */
-aside {
-    flex: 1;
-}
-
-aside h3 {
-    font-size: 16px;
-    margin-bottom: 5px;
-}
-
-aside hr {
-    margin-bottom: 15px;
-    border: 0;
-    border-top: 1px solid #eee;
-}
-
-aside ul {
+/* Sidebar List */
+.sidebar ul {
     list-style: none;
+    margin-top: 10px;
 }
 
-aside ul li {
-    padding: 5px 0;
+.sidebar ul li {
+    margin-bottom: 8px;
 }
 
-aside ul li a {
+.sidebar ul li a {
     text-decoration: none;
-    color: #334eac;
+    color: #555;
     font-size: 14px;
 }
 
-/* Footer Biru */
+/* Footer - Warna Hijau Tua/Pekat */
 footer {
-    background-color: #4a77a3;
+    background-color: #77dd77; /* Hijau yang lebih kuat */
     color: white;
-    padding: 15px 0;
-}
-
-footer p {
-    font-size: 13px;
+    text-align: left;
+    padding: 15px;
+    margin-top: 0;
 }
