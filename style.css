@@ -10,12 +10,12 @@ body {
     padding: 10px; /* Jarak sedikit dari pinggir layar */
 }
 
-/* --- 1. HEADER (Perpaduan Pink & Hijau) --- */
+/* --- 1. HEADER (Sekarang Hijau Muda) --- */
 .header-container {
-    background-color: #ffc0cb; /* PINK */
+    background-color: #b2d8b2; /* TUKAR: Sebelumnya Pink, sekarang Hijau Muda */
     padding: 30px;
     text-align: left;
-    border-bottom: 3px solid #b2d8b2; /* Garis Hijau di bawah */
+    border-bottom: 3px solid #ffc0cb; /* Aksen Pink dipindah ke garis bawah */
     border-radius: 5px 5px 0 0; /* Membuat sudut atas melengkung */
 }
 
@@ -32,11 +32,11 @@ body {
     font-weight: normal;
 }
 
-/* --- 2. MENU NAVIGASI (Hijau Muda) --- */
+/* --- 2. MENU NAVIGASI (Sekarang Pink) --- */
 .nav-bar {
-    background-color: #b2d8b2; /* HIJAU MUDA */
+    background-color: #ffc0cb; /* TUKAR: Sebelumnya Hijau Muda, sekarang Pink */
     padding: 10px;
-    border-bottom: 2px solid #a2d1a4;
+    border-bottom: 2px solid #f8a5b5; /* Warna border yang senada dengan pink */
 }
 
 .nav-bar ul {
@@ -55,12 +55,12 @@ body {
 }
 
 .nav-bar a:hover {
-    color: #f1c40f; /* KUNING: Saat disentuh kursor */
+    color: #ffffff; /* Berubah jadi putih saat disentuh agar kontras di atas pink */
 }
 
 .nav-bar a.active {
-    color: #27ae60; /* HIJAU TUA: Halaman yang sedang dibuka */
-    border-bottom: 2px solid #27ae60;
+    color: #d81b60; /* PINK TUA: Halaman yang sedang dibuka */
+    border-bottom: 2px solid #d81b60;
 }
 
 /* --- 3. WADAH UTAMA (Warna Kuning Tengah) --- */
@@ -149,7 +149,7 @@ button {
 
 /* --- 4. FOOTER (Bagian Bawah) --- */
 .site-footer {
-    background-color: #4a77a5; /* Biru seperti gambar */
+    background-color: #4a77a5; /* Biru */
     color: white;
     text-align: center;
     padding: 15px;
@@ -160,4 +160,15 @@ button {
 .site-footer p {
     margin: 0;
     font-size: 14px;
+}
+
+/* Bonus: Agar tampilan rapi di HP */
+@media (max-width: 600px) {
+    .main-wrapper {
+        flex-direction: column;
+    }
+    .nav-bar ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
