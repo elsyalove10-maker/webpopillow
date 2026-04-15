@@ -1,95 +1,63 @@
-/* Dasar Halaman */
 body {
-    background-color: #a2d1a4; /* Hijau Terang untuk background luar */
+    background-color: #a2d1a4; /* Hijau luar */
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 20px;
 }
 
-/* Header (Warna Pink) */
+/* Kotak Header */
 .header {
     background-color: #ffc0cb; /* Pink */
-    padding: 30px;
-    text-align: center;
-    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: left;
+    border-bottom: 2px solid #ddd;
 }
 
-/* Navigasi (Warna Hijau Daun) */
+/* Navigasi */
 .nav {
-    background-color: #b2d8b2; /* Hijau Muda */
+    background-color: #b2d8b2; /* Hijau muda */
     padding: 10px;
 }
 
 .nav ul {
     list-style: none;
-    margin: 0;
     padding: 0;
     display: flex;
+    gap: 15px;
 }
 
-.nav ul li a {
-    text-decoration: none;
-    color: white;
-    padding: 0 15px;
-    font-weight: bold;
-}
+.nav a { text-decoration: none; color: blue; font-weight: bold; }
 
-/* Wadah Utama (Flexbox untuk membagi kiri dan kanan) */
+/* INI KUNCINYA: Membuat konten dan sidebar bersebelahan */
 .main-container {
-    background-color: #fff9c4; /* Kuning Lembut */
-    display: flex;
+    display: flex; /* Membuat konten & kategori jadi samping-sampingan */
+    background-color: #fff9c4; /* Kuning tengah */
     padding: 20px;
-    margin-top: 5px;
-    min-height: 400px;
+    gap: 20px;
 }
 
-/* Bagian Konten Kiri */
 .content {
-    flex: 3; /* Lebih lebar */
-    padding-right: 20px;
+    flex: 3; /* Bagian kiri lebih lebar */
 }
 
 .post-box {
     background-color: white;
-    border: 1px solid #888;
     padding: 15px;
-    margin-bottom: 20px;
-}
-
-.btn {
-    background-color: #f0f0f0;
+    margin-bottom: 15px;
     border: 1px solid #ccc;
-    padding: 5px 10px;
-    cursor: pointer;
 }
 
-/* Bagian Sidebar Kanan */
 .sidebar {
-    flex: 1; /* Lebih sempit */
+    flex: 1; /* Bagian kategori lebih sempit */
     background-color: white;
     padding: 15px;
-    border-left: 1px solid #ddd;
+    border: 1px solid #ccc;
 }
 
-.cat-list {
-    list-style: none;
-    padding: 0;
-}
-
-.cat-list li {
-    margin-bottom: 10px;
-}
-
-.cat-list li a {
-    text-decoration: none;
-    color: darkblue;
-}
-
-/* Footer (Warna Biru/Hijau sesuai gambar) */
 .footer {
-    background-color: #4a77a5; /* Biru seperti gambar */
+    background-color: #4a77a5;
     color: white;
     text-align: center;
     padding: 10px;
-    margin-top: 5px;
+    margin-top: 10px;
 }
