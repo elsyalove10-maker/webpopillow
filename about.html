@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me - Belajar Website</title>
+    <title>About Me - Website</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <div class="container">
         <header>
-            <h1>Tentang Saya</h1>
+            <h1>Belajar Membuat Website dengan HTML, CSS dan Layout</h1>
         </header>
 
         <nav>
@@ -22,31 +22,27 @@
             </ul>
         </nav>
 
-        <div class="wrapper">
-            <main>
-                <div class="card">
-                    <h2>Halo, Saya Developer Pemula!</h2>
-                    <p>Halaman ini dibuat sebagai contoh penggunaan HTML dan CSS dengan tema warna yang berani (Pink, Kuning, Hijau). Saya sedang belajar membangun website yang responsif dan rapi.</p>
-                    <p>Proyek ini mencakup pemisahan file CSS agar website lebih mudah dikelola saat halaman bertambah banyak.</p>
-                </div>
-                
-                <div class="card">
-                    <h2>Visi & Misi</h2>
-                    <p>Menjadi pengembang web yang handal dan bisa berbagi ilmu melalui tutorial yang mudah dipahami.</p>
-                </div>
+        <div class="main-wrapper">
+            <main class="content">
+                <article class="post">
+                    <h2>Tentang Saya</h2>
+                    <p>Ini adalah halaman About. Di sini Anda bisa menjelaskan profil singkat atau visi misi dari website yang Anda bangun.</p>
+                </article>
             </main>
 
-            <aside>
-                <div class="sidebar-box">
-                    <h3>INFO KONTAK</h3>
-                    <p>Email: admin@codekop.com</p>
-                    <p>GitHub: @codekop</p>
-                </div>
+            <aside class="sidebar">
+                <h3>CATEGORY</h3>
+                <hr>
+                <ul>
+                    <li><a href="#">HTML</a></li>
+                    <li><a href="#">CSS</a></li>
+                    <li><a href="#">BOOTSTRAP</a></li>
+                </ul>
             </aside>
         </div>
 
         <footer>
-            copyright 2026 codekop all reserved
+            <p>copyright 2026 codekop all reserved</p>
         </footer>
     </div>
 
