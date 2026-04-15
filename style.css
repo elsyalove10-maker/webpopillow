@@ -1,31 +1,31 @@
-/* Pengaturan Dasar */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Arial, sans-serif;
+    font-family: Arial, sans-serif;
 }
 
-.inner-content {
+/* Pembatas lebar konten */
+.inner {
     max-width: 1000px;
     margin: 0 auto;
     padding: 0 20px;
 }
 
-/* 1. Warna Header: PINK */
+/* 1. Header PINK */
 header {
     background-color: #ffcce0; 
-    height: 120px;
+    height: 130px;
     display: flex;
     align-items: center;
 }
 
 header h1 {
     color: white;
-    font-size: 20px;
+    font-size: 18px;
 }
 
-/* 2. Warna Navigasi: HIJAU */
+/* 2. Navigasi HIJAU */
 nav {
     background-color: #a8d5a2;
     padding: 12px 0;
@@ -34,9 +34,6 @@ nav {
 nav ul {
     list-style: none;
     display: flex;
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 0 20px;
 }
 
 nav ul li {
@@ -50,58 +47,51 @@ nav ul li a {
     font-weight: bold;
 }
 
-/* 3. Warna Background Luar: KUNING */
-.wrapper-luar {
+/* 3. Background Luar KUNING */
+.bg-kuning {
     background-color: #fff9c4; 
-    padding: 30px 0;
+    padding: 20px 0;
 }
 
 /* Wadah Putih di Tengah */
-.container-putih {
+.container {
     background-color: white;
     max-width: 1000px;
     margin: 0 auto;
     display: flex;
     padding: 30px;
     gap: 30px;
-    min-height: 450px;
+    min-height: 400px;
 }
 
 main {
     flex: 2.5;
 }
 
-/* Kotak Artikel dengan Garis Tipis & Tombol */
-.artikel-box {
-    border: 1px solid #7a9ead; /* Garis kotak biru tipis */
+/* Kotak Artikel dengan Garis Tipis (Sesuai Gambar) */
+.kotak-artikel {
+    border: 1px solid #7a9ead; 
     padding: 20px;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 
-.artikel-box h2 {
-    font-size: 22px;
+.kotak-artikel h2 {
+    font-size: 18px;
     margin-bottom: 10px;
-    color: #333;
 }
 
-.artikel-box p {
-    font-size: 15px;
-    color: #555;
+.kotak-artikel p {
+    font-size: 14px;
     margin-bottom: 15px;
 }
 
 /* Tombol Read More */
 .btn-read {
-    background-color: #efefef;
+    background-color: #f0f0f0;
     border: 1px solid #999;
-    padding: 5px 12px;
-    font-size: 13px;
+    padding: 4px 10px;
+    font-size: 12px;
     cursor: pointer;
-    border-radius: 3px;
-}
-
-.btn-read:hover {
-    background-color: #ddd;
 }
 
 /* Sidebar */
@@ -109,35 +99,26 @@ aside {
     flex: 1;
 }
 
-aside h3 {
-    font-size: 16px;
-    margin-bottom: 5px;
-}
-
 aside hr {
-    margin-bottom: 15px;
+    margin: 10px 0;
     border: 0;
-    border-top: 1px solid #eee;
+    border-top: 1px solid #ddd;
 }
 
 aside ul {
     list-style: none;
 }
 
-aside ul li {
-    padding: 5px 0;
-}
-
 aside ul li a {
     text-decoration: none;
     color: #3c5a99;
     font-size: 14px;
+    line-height: 2;
 }
 
-/* Footer Biru */
+/* Footer */
 footer {
     background-color: #5d8aa8;
     color: white;
-    text-align: center;
-    padding: 20px;
+    padding: 15px 0;
 }
