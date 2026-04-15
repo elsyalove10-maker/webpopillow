@@ -1,163 +1,104 @@
-/* --- Pengaturan Dasar Website --- */
+/* Reset Dasar */
 * {
-    box-sizing: border-box; /* Agar padding tidak merusak lebar kotak */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
 body {
-    background-color: #a2d1a4; /* HIJAU TERANG: Latar belakang luar */
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-    padding: 10px; /* Jarak sedikit dari pinggir layar */
+    background-color: #fef9e7; /* Kuning sangat muda untuk background luar */
 }
 
-/* --- 1. HEADER (Perpaduan Pink & Hijau) --- */
-.header-container {
-    background-color: #ffc0cb; /* PINK */
+/* Header - Warna Pink */
+header {
+    background-color: #ffc0cb; /* Pink */
     padding: 30px;
-    text-align: left;
-    border-bottom: 3px solid #b2d8b2; /* Garis Hijau di bawah */
-    border-radius: 5px 5px 0 0; /* Membuat sudut atas melengkung */
+    text-align: center;
+    color: white;
 }
 
-.header-content h1 {
-    margin: 0;
-    color: #333;
-    font-size: 24px;
+/* Navbar - Warna Hijau */
+nav {
+    background-color: #a3d9a5; /* Hijau Lembut */
+    padding: 10px 0;
 }
 
-.header-content h2 {
-    margin: 5px 0 0;
-    color: #555;
-    font-size: 18px;
-    font-weight: normal;
-}
-
-/* --- 2. MENU NAVIGASI (Hijau Muda) --- */
-.nav-bar {
-    background-color: #b2d8b2; /* HIJAU MUDA */
-    padding: 10px;
-    border-bottom: 2px solid #a2d1a4;
-}
-
-.nav-bar ul {
+nav ul {
     list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex; /* Membuat menu berjajar ke samping */
-    gap: 20px; /* Jarak antar menu */
+    display: flex;
+    justify-content: center;
 }
 
-.nav-bar a {
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
     text-decoration: none;
-    color: #444;
+    color: white;
     font-weight: bold;
-    font-size: 16px;
 }
 
-.nav-bar a:hover {
-    color: #f1c40f; /* KUNING: Saat disentuh kursor */
-}
-
-.nav-bar a.active {
-    color: #27ae60; /* HIJAU TUA: Halaman yang sedang dibuka */
-    border-bottom: 2px solid #27ae60;
-}
-
-/* --- 3. WADAH UTAMA (Warna Kuning Tengah) --- */
-.main-wrapper {
-    background-color: #fff9c4; /* KUNING LEMBUT */
-    display: flex; /* MEMBUAT KIRI & KANAN BERSEBELAHAN */
+/* Layout Utama */
+.container {
+    display: flex;
+    max-width: 1000px;
+    margin: 20px auto;
+    background-color: #fff9c4; /* Kuning Cerah untuk area konten */
     padding: 20px;
-    margin-top: 5px;
-    gap: 20px; /* Jarak antara konten dan sidebar */
+    gap: 20px;
 }
 
-/* Bagian Kiri (Konten) */
-.left-content {
-    flex: 3; /* Bagian kiri lebih lebar */
+/* Konten Kiri */
+main {
+    flex: 3;
 }
 
-.info-card {
-    background-color: white;
-    padding: 15px;
+.card {
+    background: white;
+    border: 1px solid #ccc;
+    padding: 20px;
     margin-bottom: 20px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
 }
 
-.info-card h3 {
-    margin-top: 0;
-    color: #27ae60;
-}
-
-/* Tombol (Button) */
-button {
-    border: none;
-    padding: 8px 15px;
+.btn {
+    margin-top: 10px;
+    padding: 5px 10px;
     cursor: pointer;
-    border-radius: 3px;
-    font-size: 14px;
+    background: #f0f0f0;
+    border: 1px solid #999;
 }
 
-.btn-primary {
-    background-color: #2ecc71; /* Hijau Terang */
-    color: white;
-}
-
-.btn-secondary {
-    background-color: #f1c40f; /* Kuning Terang */
-    color: black;
-}
-
-/* Bagian Kanan (Sidebar Kategori) */
-.right-sidebar {
-    flex: 1; /* Bagian kanan lebih sempit */
-    background-color: white;
+/* Sidebar Kanan */
+aside {
+    flex: 1;
+    background: white;
     padding: 15px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    height: fit-content; /* Sesuai isi, tidak memanjang ke bawah */
+    border: 1px solid #ccc;
+    height: fit-content;
 }
 
-.right-sidebar h3 {
-    margin-top: 0;
-    color: #333;
-    font-size: 16px;
-    text-align: center;
-}
-
-.right-sidebar hr {
-    border: 0;
-    border-top: 1px solid #ddd;
-}
-
-.cat-list {
+aside ul {
     list-style: none;
-    padding: 0;
+    margin-top: 10px;
 }
 
-.cat-list li {
-    margin-bottom: 8px;
-    text-align: center;
+aside ul li {
+    padding: 5px 0;
 }
 
-.cat-list li a {
+aside ul li a {
     text-decoration: none;
-    color: darkblue;
-    font-weight: bold;
+    color: #334eac;
+    font-size: 14px;
 }
 
-/* --- 4. FOOTER (Bagian Bawah) --- */
-.site-footer {
-    background-color: #4a77a5; /* Biru seperti gambar */
+/* Footer - Biru (Sesuai gambar) */
+footer {
+    background-color: #5d8aa8; 
     color: white;
     text-align: center;
     padding: 15px;
-    margin-top: 5px;
-    border-radius: 0 0 5px 5px;
-}
-
-.site-footer p {
-    margin: 0;
-    font-size: 14px;
+    margin-top: 20px;
 }
