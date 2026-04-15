@@ -1,141 +1,107 @@
-/* Reset & Base */
-* {
+/* Pengaturan Umum */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fce4ec; /* Pink Lembut */
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-body {
-    background-color: #fdf2f8; /* Pink sangat muda */
-    color: #333;
-    line-height: 1.6;
 }
 
 .container {
-    max-width: 1100px;
+    width: 90%;
+    max-width: 1000px;
     margin: 20px auto;
-    background: #fff;
-    border: 8px solid #fde047; /* Kuning Cerah */
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-    overflow: hidden;
 }
 
 /* Header */
 header {
-    background-color: #db2777; /* Pink Tua */
+    background-color: #43a047; /* Hijau Lembut Gelap sedikit agar teks putih kontras */
     color: white;
-    padding: 40px 20px;
-    border-bottom: 5px solid #fde047;
+    padding: 30px;
+    text-align: left;
 }
 
 /* Navigation */
 nav {
-    background-color: #84cc16; /* Hijau Terang */
-    padding: 0;
+    background-color: #2e7d32; /* Hijau lebih gelap */
+    padding: 10px;
 }
 
 nav ul {
-    list-style: none;
+    list-items: none;
+    margin: 0;
+    padding: 0;
     display: flex;
+}
+
+nav ul li {
+    list-style: none;
+    margin-right: 20px;
 }
 
 nav ul li a {
-    display: block;
-    padding: 15px 25px;
+    color: white;
     text-decoration: none;
-    color: #fff;
     font-weight: bold;
-    transition: 0.3s;
 }
 
-nav ul li a:hover {
-    background-color: #65a30d;
-    color: #fde047;
-}
-
-/* Layout Wrapper */
-.wrapper {
+/* Layout Konten & Sidebar */
+.main-wrapper {
     display: flex;
-    padding: 30px;
-    gap: 30px;
+    background-color: white;
+    padding: 20px;
+    min-height: 400px;
 }
 
-/* Main Content */
-main {
+.content {
+    flex: 7;
+    padding-right: 20px;
+}
+
+.sidebar {
     flex: 3;
+    border-left: 1px solid #ddd;
+    padding-left: 20px;
 }
 
-.card {
-    border: 2px solid #f472b6; /* Pink Border */
-    padding: 25px;
-    margin-bottom: 25px;
-    border-radius: 8px;
-    background: #fff;
+/* Style Artikel */
+.post {
+    border: 2px solid #555;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #fff9c4; /* Kuning Lembut */
 }
 
-.card h2 {
-    color: #be185d;
-    margin-bottom: 10px;
+.post h2 {
+    margin-top: 0;
 }
 
 .btn-read {
-    display: inline-block;
-    margin-top: 15px;
-    padding: 8px 20px;
-    background-color: #fde047;
-    color: #854d0e;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 4px;
-    font-size: 14px;
+    background-color: #e0e0e0;
+    border: 1px solid #aaa;
+    padding: 5px 10px;
+    cursor: pointer;
 }
 
-/* Sidebar */
-aside {
-    flex: 1;
-}
-
-.sidebar-box {
-    background: #f0fdf4; /* Hijau sangat muda */
-    padding: 20px;
-    border-radius: 8px;
-    border: 1px solid #84cc16;
-}
-
-aside h3 {
-    color: #166534;
-    border-bottom: 3px solid #fde047;
-    padding-bottom: 5px;
-    margin-bottom: 15px;
-}
-
-aside ul {
+/* Sidebar List */
+.sidebar ul {
     list-style: none;
+    padding: 0;
 }
 
-aside ul li {
-    padding: 8px 0;
-    border-bottom: 1px dashed #bef264;
+.sidebar ul li {
+    margin-bottom: 10px;
 }
 
-aside ul li a {
+.sidebar ul li a {
+    color: #1a237e;
     text-decoration: none;
-    color: #166534;
-    font-weight: 500;
 }
 
 /* Footer */
 footer {
-    background-color: #db2777;
+    background-color: #2e7d32;
     color: white;
-    padding: 20px;
-    text-align: center;
-    font-weight: bold;
-}
-
-/* Responsif */
-@media (max-width: 768px) {
-    .wrapper { flex-direction: column; }
-    .container { margin: 0; border: none; }
+    text-align: left;
+    padding: 10px 20px;
+    margin-top: 5px;
 }
