@@ -5,30 +5,30 @@
     font-family: Arial, sans-serif;
 }
 
-/* Header Pink Full Lebar */
+/* Pembatas lebar konten */
+.inner {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* 1. Header PINK */
 header {
-    background-color: #ffcce0; /* Pink Muda */
-    padding: 40px 20px;
-    height: 150px;
+    background-color: #ffcce0; 
+    height: 130px;
+    display: flex;
+    align-items: center;
 }
 
 header h1 {
     color: white;
     font-size: 18px;
-    max-width: 1000px;
-    margin: 0 auto;
 }
 
-/* Navigasi Hijau */
+/* 2. Navigasi HIJAU */
 nav {
-    background-color: #c2e0c2; /* Hijau Muda */
-    padding: 10px 0;
-}
-
-.inner-content {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 0 20px;
+    background-color: #a8d5a2;
+    padding: 12px 0;
 }
 
 nav ul {
@@ -37,23 +37,23 @@ nav ul {
 }
 
 nav ul li {
-    margin-right: 20px;
+    margin-right: 25px;
 }
 
 nav ul li a {
     text-decoration: none;
     color: white;
     font-size: 14px;
+    font-weight: bold;
 }
 
-/* Wrapper Utama untuk Background Hijau di sisi luar */
-.main-wrapper {
-    background-color: #c2e0c2; /* Hijau yang sama dengan nav */
+/* 3. Background Luar KUNING */
+.bg-kuning {
+    background-color: #fff9c4; 
     padding: 20px 0;
-    min-height: 500px;
 }
 
-/* Kotak Putih di Tengah */
+/* Wadah Putih di Tengah */
 .container {
     background-color: white;
     max-width: 1000px;
@@ -61,28 +61,35 @@ nav ul li a {
     display: flex;
     padding: 30px;
     gap: 30px;
+    min-height: 400px;
 }
 
 main {
-    flex: 2;
+    flex: 2.5;
 }
 
-/* Kotak Artikel (Border Biru Tipis) */
-.post-card {
-    border: 1px solid #a3c1ad;
+/* Kotak Artikel dengan Garis Tipis (Sesuai Gambar) */
+.kotak-artikel {
+    border: 1px solid #7a9ead; 
     padding: 20px;
     margin-bottom: 20px;
 }
 
-.post-card h2 {
+.kotak-artikel h2 {
     font-size: 18px;
     margin-bottom: 10px;
 }
 
-.read-more {
-    background: #f0f0f0;
-    border: 1px solid #ccc;
-    padding: 2px 5px;
+.kotak-artikel p {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+/* Tombol Read More */
+.btn-read {
+    background-color: #f0f0f0;
+    border: 1px solid #999;
+    padding: 4px 10px;
     font-size: 12px;
     cursor: pointer;
 }
@@ -92,38 +99,26 @@ aside {
     flex: 1;
 }
 
-aside h3 {
-    font-size: 16px;
-    margin-bottom: 5px;
-}
-
 aside hr {
-    margin-bottom: 15px;
+    margin: 10px 0;
     border: 0;
-    border-top: 1px solid #eee;
+    border-top: 1px solid #ddd;
 }
 
 aside ul {
     list-style: none;
 }
 
-aside ul li {
-    padding: 5px 0;
-}
-
 aside ul li a {
     text-decoration: none;
-    color: #334eac;
+    color: #3c5a99;
     font-size: 14px;
+    line-height: 2;
 }
 
-/* Footer Biru */
+/* Footer */
 footer {
-    background-color: #4a77a3;
+    background-color: #5d8aa8;
     color: white;
     padding: 15px 0;
-}
-
-footer p {
-    font-size: 13px;
 }
